@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0d1117;
+    color:white;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.game-container{
+    text-align:center;
+}
+
+h1{
+    color:cyan;
+    text-shadow:0 0 15px cyan;
+}
+
+.score-box{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+#gameArea{
+    width:400px;
+    height:500px;
+    border:3px solid cyan;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 0 25px cyan;
+    border-radius:15px;
+    background-image:url('../assets/bg.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+#player{
+    width:60px;
+    height:60px;
+    font-size:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    bottom:20px;
+    left:170px;
+}
+
+.obstacle{
+    width:60px;
+    height:60px;
+    position:absolute;
+    top:-60px;
+    font-size:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.control-btn{
+    min-width:120px;
+}
+
+.footer{
+    margin-top:15px;
+    color:#bbb;
+}
+
+.mobile-controls{
+    margin-top:15px;
+}
+
+.mobile-controls button{
+    width:70px;
+    height:70px;
+    font-size:24px;
+}
